@@ -12,8 +12,8 @@ CTX="${CTX:-65536}"
 NGL="${NGL:-99}" # GPU layers; set 0 for CPU-only
 LOCAL_PORT="${LOCAL_PORT:-7891}"
 
-VPS="${VPS:-knd@vps2}"
-SSH_PORT="${SSH_PORT:-22666}"
+VPS="${VPS:-}"
+SSH_PORT="${SSH_PORT:-}"
 SSH_KEY="${SSH_KEY:-~/.ssh/id_ed25519}" # optional, e.g. ~/.ssh/id_ed25519
 REMOTE_PORT="${REMOTE_PORT:-7891}"
 # 127.0.0.1 = reachable only from the VPS itself (recommended).
