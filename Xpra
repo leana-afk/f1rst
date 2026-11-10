@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+user="$1"
+host="$2"
+prog="$3"
+
+if [ ! -z "$4" ]; then
+  port="$4"
+else
+  port=22
+fi
+
+echo "======================================"
+echo -e "Running ${prog} on ${user}@${host}:${port}"
+echo "______________________________________"
+
+xpra seamless --ssh "ssh -p ${port}" "ssh://${user}@${host}" --start="$prog"
